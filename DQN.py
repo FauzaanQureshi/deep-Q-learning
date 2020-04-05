@@ -15,5 +15,5 @@ class DQN:
     def forward(self, v):
         #print(v.shape)
         v = self.model.predict(v)
-        print(v[0])
+        #print(v[0])
         return v
