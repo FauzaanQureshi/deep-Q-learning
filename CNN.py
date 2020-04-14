@@ -36,6 +36,7 @@ class CNN:
                            loss="mean_squared_error", metrics=["accuracy"])
 
         if weights is not None:
+            print("\n\n\nWeights Found!!!\t", weights)
             self.model.load_weights(weights)
 
     def predict(self, current_state):
@@ -67,5 +68,5 @@ class CNN:
                            verbose=0)
 
     def save(self, filepath="model_weights"):
-        print("Saving Weights!!")
+        # print("Saving Weights!!")
         self.model.save_weights(filepath)
