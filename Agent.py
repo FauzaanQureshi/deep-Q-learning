@@ -6,11 +6,11 @@ import os
 
 class Agent:
     def __init__(self, input_shape, action_space, game_name,
-                 memory=10000,
+                 memory=50000,
                  epsilon=1,
                  min_epsilon=0.1,
                  decay_rate=0.9,
-                 batch_size=32,
+                 batch_size=45,
                  load_weights=True,
                  test=False):
         self.action_set = action_space  # if action_space <= 6 else 6
@@ -74,3 +74,19 @@ class Agent:
 
     def save(self):
         self.policy_network.save(filepath=str(self.game+"_weights"))
+
+    def save_state(self):
+        with open("Experiences", 'wb') as experience_dump:
+            p.dump(self.experiences, experience_dump)
+        experience_dump.close()
+
+    def load_state(self, load=True):
+        if load:
+            if os.path.exists("Experiences"):
+                with open("Experiences", 'rb') as experience_dump:
+                    self.experiences = p.load(experience_dump)
+                experience_dump.close()
+                self.epsilon = 0.1
+                print("LOAD SUCCESSFUL\n\n\n\n")
+                return True
+        return False
