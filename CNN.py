@@ -3,12 +3,15 @@ from keras.layers import Conv2D
 from keras.layers import Dense
 from keras.layers import Flatten
 from keras.optimizers import RMSprop
+# from keras.callbacks import CSVLogger
+import gc
 import numpy as np
 
 
 class CNN:
     def __init__(self, input_dim, action_space,
                  discount_factor=0.99, learning_rate=0.00025, batch_size=32, weights=None):
+        # self.logger = CSVLogger("History.txt", append=True)
         self.discount_factor = discount_factor
         self.batch_size = batch_size
 
@@ -45,7 +48,6 @@ class CNN:
     def train(self, batch, target_network):
         x = []
         y = []
-
         for experience in batch:
             x.append(experience['current'].astype(np.float64))
 
@@ -65,8 +67,16 @@ class CNN:
                            np.asarray(y),
                            batch_size=self.batch_size,
                            epochs=1,
-                           verbose=0)
+                           verbose=0)#,
+                           #callbacks=[self.logger])
 
     def save(self, filepath="model_weights"):
         # print("Saving Weights!!")
         self.model.save_weights(filepath)
+
+    def clean(self):
+        del self.model
+        del self.batch_size
+        del self.discount_factor
+        # del self.logger
+        gc.collect()
