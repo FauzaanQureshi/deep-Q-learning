@@ -1,6 +1,8 @@
 from CNN import CNN
 from random import random, randint, randrange
 import numpy as np
+import pickle as p
+import gc
 import os
 
 
@@ -21,7 +23,7 @@ class Agent:
         self.decay = decay_rate
         self.batch_size = batch_size
         self.game = game_name
-
+        print("Action Set: ", self.action_set)
         filepath = str(self.game + "_weights") if load_weights else None
 
         self.policy_network = CNN(self.input_shape,
@@ -61,13 +63,14 @@ class Agent:
         self.policy_network.train(self.sample_experiences(), self.target_network)
 
     def greedy(self):
-        if self.epsilon - self.decay > self.epsilon_min:
-            self.epsilon -= self.decay
+        if self.epsilon * self.decay > self.epsilon_min:
+            self.epsilon *= self.decay
         else:
             self.epsilon = self.epsilon_min
 
     def update_target_network(self):
         self.target_network.model.set_weights(self.policy_network.model.get_weights())
+        print("Target Network Updated.")
 
     def experience_available(self):
         return True if self.experiences.__len__() >= self.batch_size else False
@@ -76,17 +79,47 @@ class Agent:
         self.policy_network.save(filepath=str(self.game+"_weights"))
 
     def save_state(self):
-        with open("Experiences", 'wb') as experience_dump:
-            p.dump(self.experiences, experience_dump)
+        while self.experiences.__len__() > 49000:
+            self.experiences.pop(0)
+
+        self.clean()
+        print("Saving Experience State...")
+        gc.disable()
+        with open("Experiences"+self.game, 'wb') as experience_dump:
+            p.dump(self.experiences, experience_dump, protocol=p.HIGHEST_PROTOCOL)
+        gc.enable()
         experience_dump.close()
+        print("Number of Experiences : ", self.experiences.__len__())
+        del self.experiences
+        print("Experience State Saved!")
 
     def load_state(self, load=True):
         if load:
-            if os.path.exists("Experiences"):
-                with open("Experiences", 'rb') as experience_dump:
+            if os.path.exists("Experiences"+self.game):
+                print("Loading Experiences...")
+                gc.disable()
+                with open("Experiences"+self.game, 'rb') as experience_dump:
                     self.experiences = p.load(experience_dump)
+                gc.enable()
                 experience_dump.close()
+                os.remove("Experiences"+self.game)
+                gc.collect()
                 self.epsilon = 0.1
-                print("LOAD SUCCESSFUL\n\n\n\n")
+                print(self.experiences.__len__(), " EXPERIENCES LOADED SUCCESSFULLY\n\n\n\n")
                 return True
         return False
+
+    def clean(self):
+        self.policy_network.clean()
+        self.target_network.clean()
+        #del self.game
+        del self.target_network
+        del self.policy_network
+        del self.batch_size
+        del self.epsilon_min
+        del self.epsilon
+        del self.input_shape
+        del self.action_set
+        del self.memory_size
+        del self.decay
+        gc.collect()
