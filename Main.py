@@ -3,13 +3,16 @@ from PIL import Image
 import numpy as np
 from Agent import Agent
 import sys
+import gc
 from time import time, sleep
 
 
 def process_state(observation):
     img = np.asanyarray(Image.fromarray(observation, 'RGB').convert('L').resize((84, 110)))
-    img = np.delete(img, np.s_[-13:], 0)
-    img = np.delete(img, np.s_[:13], 0)
+    # img = np.delete(img, np.s_[-13:], 0)SEAQUEST
+    # img = np.delete(img, np.s_[:13], 0) SEAQUEST
+    img = np.delete(img, np.s_[-10:], 0) # Breakout-v0
+    img = np.delete(img, np.s_[:16], 0)  # Breakout-v0
     # print(img.shape)
     return img
 
@@ -26,7 +29,7 @@ def main(game):
     # game_name = "Seaquest" if not _name_ else _name_
     env_name = game + "-v0"
     print(env_name, type(env_name))
-    log = open("log.txt", 'a')
+    log = open("log_"+game+".txt", 'a')
     no_episodes = int(input("Number of Episodes? : "))
     timer = time()
     log.write("\n\n=================================  Starting Session  ==============================\n")
@@ -50,12 +53,15 @@ def main(game):
             # env.render() if no_episodes-episode-1 <= 3 else None
 
             action = agent.action(np.asarray([current_state]))
+            # print("Action Taken: ", action) if _ % 47 == 0 else None
 
             obsv, reward, done, info = env.step(action)
             obsv = process_state(obsv)
             next_state = get_next_state(current_state, obsv)
 
             clipped_reward = np.clip(reward, -1, 1)
+            # print("Clipped Reward: ", clipped_reward) if _ % 47 == 0 else None
+
             agent.experience_gain(np.asarray([current_state]), action, clipped_reward, np.asarray([next_state]), done)
 
             if agent.experience_available() and _ > min_experiences:
@@ -65,7 +71,7 @@ def main(game):
                     count += 1
                     agent.train()
                     # print("Steps : ", _, "\tCount = ", count)
-                    if count == 1000:
+                    if count == 850:
                         count = 0
                         agent.save()
                         agent.update_target_network()
@@ -87,10 +93,24 @@ def main(game):
         timer = time()
 
     print("\n\nTotal Steps = ", _)
-    agent.save_state()
-    input("\n\n\nPress Return to exit.")
     log.write("=================================   Ending Session   ==============================\n")
     log.close()
+
+    del timer
+    del current_state
+    del next_state
+    del count
+    del _
+    del steps
+    del log
+    del env
+    gc.collect()
+
+    # agent.clean()
+    agent.save_state()
+    sleep(10)
+
+    #input("\n\nPress Return to exit.")
 
 
 def test(game):
@@ -101,37 +121,43 @@ def test(game):
 
     run = 'y'
     while run == 'y' or run == 'Y':
-        obsv = process_state(env.reset())
-        current_state = np.array([obsv, obsv, obsv, obsv])
-        done = False
-        score = _ = 0
-        while not done:
-            _ += 1
-            env.render()
-            sleep(0.01)
-            action = agent.action(np.asarray([current_state]))
-            # Image.fromarray(process_state(env.render("rgb_array"))).show() if _ % 500 == 0 else None
-
-            obsv, reward, done, info = env.step(action)
-            obsv = process_state(obsv)
-            next_state = get_next_state(current_state, obsv)
-
-            current_state = next_state
-            score += reward
-
-        print("Total Reward: ", score, "\nSteps: ", _)
+        try:
+            obsv = process_state(env.reset())
+            current_state = np.array([obsv, obsv, obsv, obsv])
+            done = False
+            score = _ = reward = 0
+            while not done:
+                _ += 1
+                env.render()
+                # sleep(0.01)
+                action = agent.action(np.asarray([current_state]))
+                # Image.fromarray(process_state(env.render("rgb_array"))).show() if _ % 500 == 0 else None
+                print(action) if reward != 0 else None
+    
+                obsv, reward, done, info = env.step(action)
+                obsv = process_state(obsv)
+                next_state = get_next_state(current_state, obsv)
+    
+                current_state = next_state
+                score += reward
+    
+            print("Total Reward: ", score, "\nSteps: ", _)
+            env.close()
+        except KeyboardInterrupt:
+            env.step(env.action_space.sample())
         run = input("\nRUN TEST AGAIN? (Y/N) : ")
     print("Exiting Environment.")
     env.close()
 
 
 def processed_screen():
-    env = gym.make("Seaquest-v0")
+    name = "Seaquest-v0"
+    env = gym.make(name)
     env.reset()
     for i in range(400):
         env.step(env.action_space.sample())
     screen = env.render("rgb_array")
-    Image.fromarray(screen).save("Seaquest.png")
+    Image.fromarray(screen).save(name+".png")
     Image.fromarray(process_state(screen)).show()
 
 
@@ -145,4 +171,4 @@ if __name__ == '__main__':
     else:
         test(game_name)
         # process_state("SC0.png")
-        # processed_screen()
+        #processed_screen()
