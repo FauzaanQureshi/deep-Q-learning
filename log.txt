@@ -1,0 +1,324 @@
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 20.0	Steps: 570	Moving Avg: 20.00	Time: 0:22 
+2	TotalReward = 60.0	Steps: 592	Moving Avg: 40.00	Time: 0:1 
+3	TotalReward = 200.0	Steps: 1186	Moving Avg: 120.00	Time: 6:0 
+4	TotalReward = 300.0	Steps: 1452	Moving Avg: 210.00	Time: 7:43 
+5	TotalReward = 240.0	Steps: 976	Moving Avg: 225.00	Time: 5:5 
+6	TotalReward = 280.0	Steps: 1266	Moving Avg: 252.50	Time: 6:39 
+7	TotalReward = 420.0	Steps: 1656	Moving Avg: 336.25	Time: 8:49 
+8	TotalReward = 160.0	Steps: 918	Moving Avg: 248.12	Time: 3:31 
+9	TotalReward = 340.0	Steps: 1262	Moving Avg: 294.06	Time: 4:42 
+10	TotalReward = 280.0	Steps: 1361	Moving Avg: 287.03	Time: 5:4 
+11	TotalReward = 380.0	Steps: 1718	Moving Avg: 333.52	Time: 6:25 
+12	TotalReward = 500.0	Steps: 2170	Moving Avg: 416.76	Time: 8:8 
+13	TotalReward = 400.0	Steps: 1677	Moving Avg: 408.38	Time: 6:16 
+14	TotalReward = 280.0	Steps: 1237	Moving Avg: 344.19	Time: 4:36 
+15	TotalReward = 360.0	Steps: 1695	Moving Avg: 352.09	Time: 6:18 
+16	TotalReward = 380.0	Steps: 1680	Moving Avg: 366.05	Time: 6:17 
+17	TotalReward = 180.0	Steps: 814	Moving Avg: 273.02	Time: 3:2 
+18	TotalReward = 340.0	Steps: 1466	Moving Avg: 306.51	Time: 5:29 
+19	TotalReward = 340.0	Steps: 1607	Moving Avg: 323.26	Time: 5:59 
+20	TotalReward = 460.0	Steps: 1845	Moving Avg: 391.63	Time: 6:56 
+21	TotalReward = 320.0	Steps: 1289	Moving Avg: 355.81	Time: 4:48 
+22	TotalReward = 180.0	Steps: 1025	Moving Avg: 267.91	Time: 3:49 
+23	TotalReward = 220.0	Steps: 1196	Moving Avg: 243.95	Time: 4:27 
+24	TotalReward = 120.0	Steps: 858	Moving Avg: 181.98	Time: 3:12 
+25	TotalReward = 300.0	Steps: 1277	Moving Avg: 240.99	Time: 4:46 
+26	TotalReward = 380.0	Steps: 1641	Moving Avg: 310.49	Time: 6:7 
+27	TotalReward = 260.0	Steps: 1230	Moving Avg: 285.25	Time: 4:36 
+28	TotalReward = 220.0	Steps: 1176	Moving Avg: 252.62	Time: 4:24 
+29	TotalReward = 340.0	Steps: 1560	Moving Avg: 296.31	Time: 5:52 
+30	TotalReward = 200.0	Steps: 1048	Moving Avg: 248.16	Time: 3:56 
+31	TotalReward = 80.0	Steps: 678	Moving Avg: 164.08	Time: 2:32 
+32	TotalReward = 220.0	Steps: 1279	Moving Avg: 192.04	Time: 4:48 
+33	TotalReward = 200.0	Steps: 901	Moving Avg: 196.02	Time: 3:40 
+34	TotalReward = 200.0	Steps: 851	Moving Avg: 198.01	Time: 5:41 
+35	TotalReward = 340.0	Steps: 1688	Moving Avg: 269.00	Time: 11:23 
+36	TotalReward = 520.0	Steps: 2174	Moving Avg: 394.50	Time: 11:60 
+37	TotalReward = 540.0	Steps: 2312	Moving Avg: 467.25	Time: 13:14 
+38	TotalReward = 320.0	Steps: 1574	Moving Avg: 393.63	Time: 9:1 
+39	TotalReward = 260.0	Steps: 1202	Moving Avg: 326.81	Time: 7:41 
+40	TotalReward = 220.0	Steps: 1190	Moving Avg: 273.41	Time: 5:34 
+41	TotalReward = 100.0	Steps: 685	Moving Avg: 186.70	Time: 2:35 
+42	TotalReward = 60.0	Steps: 630	Moving Avg: 123.35	Time: 2:23 
+43	TotalReward = 160.0	Steps: 1076	Moving Avg: 141.68	Time: 4:4 
+44	TotalReward = 240.0	Steps: 1242	Moving Avg: 190.84	Time: 4:43 
+45	TotalReward = 300.0	Steps: 1447	Moving Avg: 245.42	Time: 5:34 
+46	TotalReward = 380.0	Steps: 1454	Moving Avg: 312.71	Time: 5:31 
+47	TotalReward = 540.0	Steps: 2404	Moving Avg: 426.35	Time: 9:4 
+48	TotalReward = 480.0	Steps: 1957	Moving Avg: 453.18	Time: 7:24 
+49	TotalReward = 360.0	Steps: 1639	Moving Avg: 406.59	Time: 6:11 
+50	TotalReward = 240.0	Steps: 1336	Moving Avg: 323.29	Time: 5:3 
+51	TotalReward = 340.0	Steps: 1464	Moving Avg: 331.65	Time: 5:32 
+52	TotalReward = 500.0	Steps: 2008	Moving Avg: 415.82	Time: 7:37 
+53	TotalReward = 200.0	Steps: 1049	Moving Avg: 307.91	Time: 3:59 
+54	TotalReward = 60.0	Steps: 675	Moving Avg: 183.96	Time: 2:32 
+55	TotalReward = 80.0	Steps: 786	Moving Avg: 131.98	Time: 2:58 
+56	TotalReward = 240.0	Steps: 1172	Moving Avg: 185.99	Time: 4:26 
+57	TotalReward = 280.0	Steps: 1260	Moving Avg: 232.99	Time: 4:45 
+58	TotalReward = 180.0	Steps: 915	Moving Avg: 206.50	Time: 3:28 
+59	TotalReward = 260.0	Steps: 1294	Moving Avg: 233.25	Time: 4:53 
+60	TotalReward = 480.0	Steps: 2007	Moving Avg: 356.62	Time: 7:35 
+61	TotalReward = 280.0	Steps: 1273	Moving Avg: 318.31	Time: 4:49 
+62	TotalReward = 440.0	Steps: 1833	Moving Avg: 379.16	Time: 6:57 
+63	TotalReward = 420.0	Steps: 1773	Moving Avg: 399.58	Time: 6:44 
+64	TotalReward = 260.0	Steps: 1227	Moving Avg: 329.79	Time: 4:39 
+65	TotalReward = 360.0	Steps: 1665	Moving Avg: 344.89	Time: 6:18 
+66	TotalReward = 440.0	Steps: 1896	Moving Avg: 392.45	Time: 7:10 
+67	TotalReward = 420.0	Steps: 1999	Moving Avg: 406.22	Time: 11:60 
+68	TotalReward = 420.0	Steps: 2032	Moving Avg: 413.11	Time: 13:53 
+69	TotalReward = 460.0	Steps: 1846	Moving Avg: 436.56	Time: 11:14 
+70	TotalReward = 260.0	Steps: 1232	Moving Avg: 348.28	Time: 4:39 
+71	TotalReward = 180.0	Steps: 1132	Moving Avg: 264.14	Time: 4:16 
+72	TotalReward = 320.0	Steps: 1614	Moving Avg: 292.07	Time: 6:4 
+73	TotalReward = 360.0	Steps: 1736	Moving Avg: 326.03	Time: 6:33 
+74	TotalReward = 260.0	Steps: 1186	Moving Avg: 293.02	Time: 4:29 
+75	TotalReward = 460.0	Steps: 2272	Moving Avg: 376.51	Time: 8:34 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 160.0	Steps: 922	Moving Avg: 160.00	Time: 0:19 
+2	TotalReward = 280.0	Steps: 1121	Moving Avg: 220.00	Time: 2:12 
+3	TotalReward = 340.0	Steps: 1545	Moving Avg: 280.00	Time: 5:36 
+4	TotalReward = 420.0	Steps: 1640	Moving Avg: 350.00	Time: 5:55 
+5	TotalReward = 120.0	Steps: 808	Moving Avg: 235.00	Time: 2:55 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 180.0	Steps: 947	Moving Avg: 180.00	Time: 3:22 
+2	TotalReward = 360.0	Steps: 1359	Moving Avg: 270.00	Time: 4:45 
+3	TotalReward = 540.0	Steps: 2207	Moving Avg: 405.00	Time: 7:40 
+4	TotalReward = 280.0	Steps: 1385	Moving Avg: 342.50	Time: 4:49 
+5	TotalReward = 260.0	Steps: 1344	Moving Avg: 301.25	Time: 4:40 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 220.0	Steps: 941	Moving Avg: 220.00	Time: 6:23 
+2	TotalReward = 200.0	Steps: 950	Moving Avg: 210.00	Time: 6:49 
+3	TotalReward = 360.0	Steps: 1535	Moving Avg: 285.00	Time: 11:3 
+4	TotalReward = 220.0	Steps: 1143	Moving Avg: 252.50	Time: 7:25 
+5	TotalReward = 320.0	Steps: 1502	Moving Avg: 286.25	Time: 5:49 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 280.0	Steps: 1129	Moving Avg: 280.00	Time: 4:29 
+2	TotalReward = 440.0	Steps: 1858	Moving Avg: 360.00	Time: 7:11 
+3	TotalReward = 180.0	Steps: 839	Moving Avg: 270.00	Time: 4:3 
+4	TotalReward = 200.0	Steps: 927	Moving Avg: 235.00	Time: 4:12 
+5	TotalReward = 220.0	Steps: 1221	Moving Avg: 227.50	Time: 5:45 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 260.0	Steps: 1175	Moving Avg: 260.00	Time: 5:9 
+2	TotalReward = 260.0	Steps: 1307	Moving Avg: 260.00	Time: 5:37 
+3	TotalReward = 380.0	Steps: 1512	Moving Avg: 320.00	Time: 5:52 
+4	TotalReward = 160.0	Steps: 759	Moving Avg: 240.00	Time: 2:54 
+5	TotalReward = 240.0	Steps: 1077	Moving Avg: 240.00	Time: 4:8 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 440.0	Steps: 1911	Moving Avg: 440.00	Time: 14:7 
+2	TotalReward = 520.0	Steps: 2018	Moving Avg: 480.00	Time: 13:44 
+3	TotalReward = 460.0	Steps: 2137	Moving Avg: 470.00	Time: 14:30 
+4	TotalReward = 420.0	Steps: 1801	Moving Avg: 445.00	Time: 12:11 
+5	TotalReward = 500.0	Steps: 2305	Moving Avg: 472.50	Time: 8:45 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 480.0	Steps: 2225	Moving Avg: 480.00	Time: 16:15 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 340.0	Steps: 1511	Moving Avg: 340.00	Time: 6:48 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 120.0	Steps: 605	Moving Avg: 120.00	Time: 3:53 
+2	TotalReward = 700.0	Steps: 2976	Moving Avg: 410.00	Time: 11:6 
+3	TotalReward = 400.0	Steps: 1644	Moving Avg: 405.00	Time: 6:8 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 400.0	Steps: 1975	Moving Avg: 400.00	Time: 9:5 
+2	TotalReward = 420.0	Steps: 1800	Moving Avg: 410.00	Time: 6:47 
+3	TotalReward = 360.0	Steps: 1762	Moving Avg: 385.00	Time: 6:39 
+4	TotalReward = 440.0	Steps: 2014	Moving Avg: 412.50	Time: 7:36 
+5	TotalReward = 180.0	Steps: 972	Moving Avg: 296.25	Time: 3:41 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 360.0	Steps: 1629	Moving Avg: 360.00	Time: 7:19 
+2	TotalReward = 400.0	Steps: 1874	Moving Avg: 380.00	Time: 7:6 
+3	TotalReward = 360.0	Steps: 1671	Moving Avg: 370.00	Time: 6:21 
+4	TotalReward = 280.0	Steps: 1317	Moving Avg: 325.00	Time: 5:1 
+5	TotalReward = 320.0	Steps: 1366	Moving Avg: 322.50	Time: 5:13 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 600.0	Steps: 2531	Moving Avg: 600.00	Time: 10:59 
+2	TotalReward = 480.0	Steps: 2000	Moving Avg: 540.00	Time: 7:42 
+3	TotalReward = 380.0	Steps: 1735	Moving Avg: 460.00	Time: 6:33 
+4	TotalReward = 380.0	Steps: 1829	Moving Avg: 420.00	Time: 6:53 
+5	TotalReward = 300.0	Steps: 1257	Moving Avg: 360.00	Time: 4:45 
+6	TotalReward = 400.0	Steps: 1658	Moving Avg: 380.00	Time: 6:13 
+7	TotalReward = 420.0	Steps: 1794	Moving Avg: 400.00	Time: 6:45 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 260.0	Steps: 1250	Moving Avg: 260.00	Time: 8:12 
+2	TotalReward = 500.0	Steps: 2009	Moving Avg: 380.00	Time: 11:9 
+3	TotalReward = 160.0	Steps: 848	Moving Avg: 270.00	Time: 4:45 
+4	TotalReward = 420.0	Steps: 1857	Moving Avg: 345.00	Time: 10:15 
+5	TotalReward = 260.0	Steps: 1310	Moving Avg: 302.50	Time: 7:18 
+6	TotalReward = 460.0	Steps: 2017	Moving Avg: 381.25	Time: 12:57 
+7	TotalReward = 180.0	Steps: 995	Moving Avg: 280.62	Time: 4:57 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 360.0	Steps: 1696	Moving Avg: 360.00	Time: 7:12 
+2	TotalReward = 340.0	Steps: 1592	Moving Avg: 350.00	Time: 5:59 
+3	TotalReward = 200.0	Steps: 1052	Moving Avg: 275.00	Time: 3:57 
+4	TotalReward = 320.0	Steps: 1416	Moving Avg: 297.50	Time: 5:20 
+5	TotalReward = 480.0	Steps: 2264	Moving Avg: 388.75	Time: 8:31 
+6	TotalReward = 240.0	Steps: 1299	Moving Avg: 314.38	Time: 4:53 
+7	TotalReward = 140.0	Steps: 973	Moving Avg: 227.19	Time: 3:40 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 120.0	Steps: 867	Moving Avg: 120.00	Time: 4:30 
+2	TotalReward = 440.0	Steps: 1961	Moving Avg: 280.00	Time: 7:10 
+3	TotalReward = 480.0	Steps: 2250	Moving Avg: 380.00	Time: 8:16 
+4	TotalReward = 260.0	Steps: 1280	Moving Avg: 320.00	Time: 5:2 
+5	TotalReward = 540.0	Steps: 2287	Moving Avg: 430.00	Time: 9:18 
+6	TotalReward = 320.0	Steps: 1312	Moving Avg: 375.00	Time: 5:19 
+7	TotalReward = 180.0	Steps: 958	Moving Avg: 277.50	Time: 3:54 
+8	TotalReward = 280.0	Steps: 1310	Moving Avg: 278.75	Time: 5:20 
+9	TotalReward = 280.0	Steps: 1302	Moving Avg: 279.38	Time: 5:16 
+10	TotalReward = 280.0	Steps: 1440	Moving Avg: 279.69	Time: 5:48 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 280.0	Steps: 1085	Moving Avg: 280.00	Time: 11:31 
+2	TotalReward = 260.0	Steps: 1127	Moving Avg: 270.00	Time: 10:22 
+3	TotalReward = 60.0	Steps: 587	Moving Avg: 165.00	Time: 5:13 
+4	TotalReward = 120.0	Steps: 623	Moving Avg: 142.50	Time: 2:40 
+5	TotalReward = 420.0	Steps: 1762	Moving Avg: 281.25	Time: 6:49 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 160.0	Steps: 858	Moving Avg: 160.00	Time: 4:49 
+2	TotalReward = 160.0	Steps: 813	Moving Avg: 160.00	Time: 3:4 
+3	TotalReward = 340.0	Steps: 1521	Moving Avg: 250.00	Time: 6:8 
+4	TotalReward = 540.0	Steps: 2321	Moving Avg: 395.00	Time: 9:11 
+5	TotalReward = 340.0	Steps: 1394	Moving Avg: 367.50	Time: 5:37 
+6	TotalReward = 660.0	Steps: 2751	Moving Avg: 513.75	Time: 10:21 
+7	TotalReward = 380.0	Steps: 1656	Moving Avg: 446.88	Time: 6:16 
+8	TotalReward = 200.0	Steps: 996	Moving Avg: 323.44	Time: 3:42 
+9	TotalReward = 460.0	Steps: 1933	Moving Avg: 391.72	Time: 7:12 
+10	TotalReward = 180.0	Steps: 959	Moving Avg: 285.86	Time: 3:34 
+11	TotalReward = 420.0	Steps: 1776	Moving Avg: 352.93	Time: 6:37 
+12	TotalReward = 260.0	Steps: 1386	Moving Avg: 306.46	Time: 5:13 
+13	TotalReward = 320.0	Steps: 1560	Moving Avg: 313.23	Time: 5:54 
+14	TotalReward = 220.0	Steps: 956	Moving Avg: 266.62	Time: 3:37 
+15	TotalReward = 260.0	Steps: 1226	Moving Avg: 263.31	Time: 4:37 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 440.0	Steps: 1680	Moving Avg: 440.00	Time: 7:29 
+2	TotalReward = 380.0	Steps: 1560	Moving Avg: 410.00	Time: 5:31 
+3	TotalReward = 160.0	Steps: 926	Moving Avg: 285.00	Time: 3:17 
+4	TotalReward = 260.0	Steps: 1274	Moving Avg: 272.50	Time: 4:31 
+5	TotalReward = 460.0	Steps: 1899	Moving Avg: 366.25	Time: 6:47 
+6	TotalReward = 400.0	Steps: 1718	Moving Avg: 383.12	Time: 6:6 
+7	TotalReward = 260.0	Steps: 1392	Moving Avg: 321.56	Time: 12:60 
+8	TotalReward = 40.0	Steps: 519	Moving Avg: 180.78	Time: 2:6 
+9	TotalReward = 140.0	Steps: 738	Moving Avg: 160.39	Time: 2:55 
+10	TotalReward = 120.0	Steps: 1398	Moving Avg: 140.20	Time: 5:29 
+11	TotalReward = 360.0	Steps: 1499	Moving Avg: 250.10	Time: 5:42 
+12	TotalReward = 280.0	Steps: 1360	Moving Avg: 265.05	Time: 4:59 
+13	TotalReward = 140.0	Steps: 974	Moving Avg: 202.52	Time: 3:33 
+14	TotalReward = 280.0	Steps: 1190	Moving Avg: 241.26	Time: 4:15 
+15	TotalReward = 220.0	Steps: 1067	Moving Avg: 230.63	Time: 3:48 
+16	TotalReward = 300.0	Steps: 1421	Moving Avg: 265.32	Time: 4:59 
+17	TotalReward = 60.0	Steps: 550	Moving Avg: 162.66	Time: 1:55 
+18	TotalReward = 380.0	Steps: 1792	Moving Avg: 271.33	Time: 6:8 
+19	TotalReward = 300.0	Steps: 1171	Moving Avg: 285.66	Time: 3:60 
+20	TotalReward = 200.0	Steps: 994	Moving Avg: 242.83	Time: 3:19 
+21	TotalReward = 580.0	Steps: 2268	Moving Avg: 411.42	Time: 7:33 
+22	TotalReward = 180.0	Steps: 1094	Moving Avg: 295.71	Time: 3:36 
+23	TotalReward = 200.0	Steps: 1204	Moving Avg: 247.85	Time: 3:59 
+=================================   Ending Session   ==============================
+
+
+=================================  Starting Session  ==============================
+1	TotalReward = 160.0	Steps: 696	Moving Avg: 160.00	Time: 3:45 
+2	TotalReward = 440.0	Steps: 2063	Moving Avg: 300.00	Time: 7:54 
+3	TotalReward = 140.0	Steps: 868	Moving Avg: 220.00	Time: 3:22 
+4	TotalReward = 220.0	Steps: 1287	Moving Avg: 220.00	Time: 4:57 
+5	TotalReward = 100.0	Steps: 937	Moving Avg: 160.00	Time: 3:35 
+6	TotalReward = 380.0	Steps: 1719	Moving Avg: 270.00	Time: 6:36 
+7	TotalReward = 220.0	Steps: 1252	Moving Avg: 245.00	Time: 4:48 
+8	TotalReward = 80.0	Steps: 622	Moving Avg: 162.50	Time: 2:23 
+9	TotalReward = 260.0	Steps: 1291	Moving Avg: 211.25	Time: 17:26 
+10	TotalReward = 140.0	Steps: 695	Moving Avg: 175.62	Time: 2:55 
+11	TotalReward = 320.0	Steps: 1414	Moving Avg: 247.81	Time: 6:9 
+12	TotalReward = 180.0	Steps: 872	Moving Avg: 213.91	Time: 3:30 
+13	TotalReward = 380.0	Steps: 1594	Moving Avg: 296.95	Time: 6:30 
+14	TotalReward = 440.0	Steps: 1932	Moving Avg: 368.48	Time: 7:34 
+15	TotalReward = 320.0	Steps: 1331	Moving Avg: 344.24	Time: 5:4 
+16	TotalReward = 240.0	Steps: 961	Moving Avg: 292.12	Time: 3:36 
+17	TotalReward = 420.0	Steps: 1728	Moving Avg: 356.06	Time: 6:21 
+18	TotalReward = 80.0	Steps: 623	Moving Avg: 218.03	Time: 2:17 
+19	TotalReward = 100.0	Steps: 641	Moving Avg: 159.01	Time: 2:20 
+20	TotalReward = 200.0	Steps: 934	Moving Avg: 179.51	Time: 3:22 
+21	TotalReward = 320.0	Steps: 1401	Moving Avg: 249.75	Time: 5:0 
+22	TotalReward = 600.0	Steps: 2571	Moving Avg: 424.88	Time: 9:10 
+23	TotalReward = 220.0	Steps: 1081	Moving Avg: 322.44	Time: 3:57 
+24	TotalReward = 100.0	Steps: 751	Moving Avg: 211.22	Time: 2:40 
+25	TotalReward = 260.0	Steps: 1248	Moving Avg: 235.61	Time: 4:28 
+26	TotalReward = 260.0	Steps: 1167	Moving Avg: 247.80	Time: 4:10 
+27	TotalReward = 180.0	Steps: 891	Moving Avg: 213.90	Time: 3:10 
+28	TotalReward = 300.0	Steps: 1478	Moving Avg: 256.95	Time: 5:17 
+29	TotalReward = 480.0	Steps: 2098	Moving Avg: 368.48	Time: 7:26 
+30	TotalReward = 280.0	Steps: 1566	Moving Avg: 324.24	Time: 5:33 
+31	TotalReward = 340.0	Steps: 1466	Moving Avg: 332.12	Time: 5:8 
+32	TotalReward = 380.0	Steps: 1899	Moving Avg: 356.06	Time: 6:40 
+33	TotalReward = 180.0	Steps: 809	Moving Avg: 268.03	Time: 2:52 
+34	TotalReward = 440.0	Steps: 2089	Moving Avg: 354.01	Time: 7:22 
+35	TotalReward = 480.0	Steps: 1964	Moving Avg: 417.01	Time: 6:56 
+36	TotalReward = 160.0	Steps: 703	Moving Avg: 288.50	Time: 2:28 
+37	TotalReward = 380.0	Steps: 1310	Moving Avg: 334.25	Time: 4:37 
+38	TotalReward = 220.0	Steps: 1146	Moving Avg: 277.13	Time: 4:44 
+39	TotalReward = 340.0	Steps: 1336	Moving Avg: 308.56	Time: 7:27 
+40	TotalReward = 320.0	Steps: 1476	Moving Avg: 314.28	Time: 5:42 
+41	TotalReward = 380.0	Steps: 1725	Moving Avg: 347.14	Time: 8:4 
+42	TotalReward = 360.0	Steps: 1680	Moving Avg: 353.57	Time: 6:51 
+43	TotalReward = 280.0	Steps: 1172	Moving Avg: 316.79	Time: 4:53 
+44	TotalReward = 60.0	Steps: 660	Moving Avg: 188.39	Time: 2:51 
+45	TotalReward = 160.0	Steps: 1057	Moving Avg: 174.20	Time: 8:14 
+46	TotalReward = 240.0	Steps: 1243	Moving Avg: 207.10	Time: 4:38 
+47	TotalReward = 180.0	Steps: 985	Moving Avg: 193.55	Time: 4:13 
+48	TotalReward = 240.0	Steps: 1131	Moving Avg: 216.77	Time: 4:8 
+49	TotalReward = 160.0	Steps: 1057	Moving Avg: 188.39	Time: 3:44 
+50	TotalReward = 280.0	Steps: 1455	Moving Avg: 234.19	Time: 5:7 
+=================================   Ending Session   ==============================
