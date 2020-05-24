@@ -1,19 +1,24 @@
-# Learning to play Atari games using Q learning
+# Atari-Deep-Reinforcement-Learning-
 
-To train on particular game, from commandline run:
+This Repository is part of our NNFL Course Project(Paper ID - 83). 
 
-python Main.py <Game_Name>
+# Group Members :
 
-Ex: python Main.py Breakout
+* Fauzaan Qureshi - 2017A2PS0663P
+* Rohit Bohra - 2017A7PS0225P
+* Kushaghra Raina - 2017A7PS0161P
 
-Ex: Main.py
+We have implemented the algorithm(Deep Q-learning with Experience Replay) given in this novel paper.
+Paper Link - https://arxiv.org/pdf/1312.5602.pdf
 
-*If <Game_Name> is not given, Seaquest-v0 is loaded by default.*
+# Deep Q-learning with Experience Replay :
 
-# Instruction to run:
-```
-git clone https://github.com/FauzaanQureshi/deep-Q-learning.git
-cd deep-Q-learning
-conda env create -f environment.yml
-conda install gym
-```
+# Implementation Details :
+
+# Conclusions from the experiments :
+
+# Common Issues faced by us :
+
+# Environment Details :
+
+# Instructions to Run :
