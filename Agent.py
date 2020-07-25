@@ -1,20 +1,17 @@
-from CNN import CNN
-from random import random, randint, randrange
-import numpy as np
-import pickle as p
-import gc
-import os
-
+from hyperparameters import *
+from CNN import *
+from helper import *
 
 class Agent:
     def __init__(self, input_shape, action_space, game_name,
-                 memory=50000,
-                 epsilon=1,
-                 min_epsilon=0.1,
-                 decay_rate=0.9,
-                 batch_size=45,
+                 memory=MAX_EXPERIENCES,
+                 epsilon=1.0,
+                 min_epsilon=MIN_EPSILON,
+                 decay_rate=DECAY_RATE,
+                 batch_size=BATCH_SIZE,
                  load_weights=True,
                  test=False):
+                
         self.action_set = action_space  # if action_space <= 6 else 6
         self.input_shape = input_shape
         self.memory_size = memory
@@ -24,7 +21,8 @@ class Agent:
         self.batch_size = batch_size
         self.game = game_name
         print("Action Set: ", self.action_set)
-        filepath = str(self.game + "_weights") if load_weights else None
+        
+        filepath = str("Assets/Weights/"+self.game + "_weights") if load_weights else None
 
         self.policy_network = CNN(self.input_shape,
                                   self.action_set,
@@ -39,7 +37,13 @@ class Agent:
 
     def action(self, state):
         if random() < self.epsilon:
-            return randint(0, self.action_set-1)
+            return randint(0, K-1)  # randint(0, self.action_set-1)
+        else:
+            return self.policy_network.predict(state).argmax()
+
+    def move(self, state):
+        if random() < EXPLORATION_TEST:
+            return randint(0, K-1)  # randint(0, self.action_set-1)
         else:
             return self.policy_network.predict(state).argmax()
 
@@ -59,8 +63,8 @@ class Agent:
             batch.append(self.experiences[randrange(0, self.experiences.__len__())])
         return np.asarray(batch)
 
-    def train(self):
-        self.policy_network.train(self.sample_experiences(), self.target_network)
+    def train(self, _log=False):
+        self.policy_network.train(self.sample_experiences(), self.target_network, _log)
 
     def greedy(self):
         if self.epsilon * self.decay > self.epsilon_min:
@@ -79,45 +83,47 @@ class Agent:
         self.policy_network.save(filepath=str(self.game+"_weights"))
 
     def save_state(self):
-        while self.experiences.__len__() > 49000:
+
+        while len(self.experiences) > MAX_EXPERIENCES:
             self.experiences.pop(0)
 
+        print("Saving Experience States...", self.experiences.__len__())
+        print('Cleaning...')
         self.clean()
-        print("Saving Experience State...")
+        print('Cleaned!\nWriting to file...')
         gc.disable()
-        with open("Experiences"+self.game, 'wb') as experience_dump:
-            p.dump(self.experiences, experience_dump, protocol=p.HIGHEST_PROTOCOL)
+        with open("Assets/Experiences/Experiences" + self.game, 'wb') as experience_dump:
+            joblib.dump((self.experiences,self.epsilon), experience_dump, compress=6,protocol=p.HIGHEST_PROTOCOL)  
+            # p.dump((self.experiences, self.epsilon), experience_dump, protocol=p.HIGHEST_PROTOCOL)
         gc.enable()
         experience_dump.close()
         print("Number of Experiences : ", self.experiences.__len__())
-        del self.experiences
+        print("Current Episilon Value : ", self.epsilon)
         print("Experience State Saved!")
 
     def load_state(self, load=True):
-        if load:
-            if os.path.exists("Experiences"+self.game):
-                print("Loading Experiences...")
-                gc.disable()
-                with open("Experiences"+self.game, 'rb') as experience_dump:
-                    self.experiences = p.load(experience_dump)
-                gc.enable()
-                experience_dump.close()
-                os.remove("Experiences"+self.game)
-                gc.collect()
-                self.epsilon = 0.1
-                print(self.experiences.__len__(), " EXPERIENCES LOADED SUCCESSFULLY\n\n\n\n")
-                return True
+        if load and os.path.exists("Assets/Experiences/Experiences" + self.game):
+            print("Loading Experiences...")
+            gc.disable()
+            with open("Assets/Experiences/Experiences" + self.game, 'rb') as experience_dump:
+                self.experiences,self.epsilon = joblib.load(experience_dump)
+                # self.experiences, self.episilon = p.load(experience_dump)
+            gc.enable()
+            experience_dump.close()
+            gc.collect()
+            print(self.experiences.__len__(), " EXPERIENCES LOADED SUCCESSFULLY\n\n\n\n")
+            print("Current Episilon Value : ", self.epsilon)
+            return True
         return False
 
     def clean(self):
         self.policy_network.clean()
         self.target_network.clean()
-        #del self.game
         del self.target_network
         del self.policy_network
         del self.batch_size
         del self.epsilon_min
-        del self.epsilon
+        # del self.epsilon
         del self.input_shape
         del self.action_set
         del self.memory_size
