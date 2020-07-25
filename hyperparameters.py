@@ -1,0 +1,54 @@
+import gym
+from PIL import Image
+import numpy as np
+import sys
+import gc
+import os
+from time import time, sleep
+
+from random import random, randint, randrange
+
+from keras.models import Sequential
+from keras.layers import Conv2D
+from keras.layers import Dense
+from keras.layers import Flatten
+from keras.optimizers import RMSprop
+from keras.optimizers import Adam
+from keras.callbacks import CSVLogger
+
+import pickle as p
+import joblib
+
+# Hyperparameters
+
+NUM_EXPLORE = 40 
+# 300 for Breakout
+
+TARGET_UPDATE_PERIOD = 6000
+# 1000 for Breakout
+
+LEARNING_RATE = 0.00025
+
+DISCOUNT_FACTOR = 0.99
+
+BATCH_SIZE = 32
+
+NOOPMAX = 10
+
+MAX_EXPERIENCES = 40000 # Memory Size
+
+MIN_EPSILON = 0.1
+# 0.05 for Breakout
+
+DECAY_RATE = 0.99999
+
+TOTAL_LIVES = 5 # Depend on the game
+# 5 for Breakout
+
+K = 4 # Change this!
+# Not used in Breakout
+
+# Adam Optimizer
+ADAM_Opt = Adam(lr=LEARNING_RATE)
+
+EXPLORATION_TEST = 0.1
